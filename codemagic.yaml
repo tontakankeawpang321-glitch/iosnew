@@ -6,6 +6,4 @@ workflows:
     scripts:
       - name: Build iOS app
         script: |
-          # Add your build commands here, for example:
-          # xcodebuild build -scheme GameTokenBoy -sdk iphoneos
-          echo "Building iOS app..."
+          xcodebuild build -scheme GameTokenBoy -sdk iphoneos -configuration Release
