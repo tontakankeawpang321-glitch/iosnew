@@ -1,0 +1,11 @@
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    instance_type: mac_mini_m2
+    max_build_duration: 120
+    scripts:
+      - name: Build iOS app
+        script: |
+          # Add your build commands here, for example:
+          # xcodebuild build -scheme GameTokenBoy -sdk iphoneos
+          echo "Building iOS app..."
